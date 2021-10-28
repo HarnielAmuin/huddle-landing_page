@@ -1,0 +1,93 @@
+/*@import url(https://fonts.google.com/specimen/Poppins);*/
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Open sans', san serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    margin: auto;
+    max-width: 100%;
+    width: 1200px;
+}
+
+.flex > div {
+    margin: 30px;
+    flex: 1;
+}
+
+.flex > div:first-child {
+    margin-left: 20px;
+}
+
+.flex > div:last-child {
+    margin-right: 20px;
+}
+
+button {
+    border: none;
+    border-radius: 25px;
+    padding: 10px 60px;
+    box-shadow: 0px 3px 10px 0px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-right: 50px;
+}
+
+i {
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 5px;
+}
+
+a {
+    color: black;
+    text-align: center;
+}
+
+@media screen and (max-width: 630px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+}
